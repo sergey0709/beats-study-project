@@ -1,0 +1,39 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-reviews {
+    position: relative;
+
+    &:before {
+      content: url(../img/circle.svg);
+      position: absolute;
+      bottom: -22px;
+      left: 20%;
+    }
+  }
+
+  &--order {
+    background: #181818;
+    color: #fff;
+    font-family: play;
+  }
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #292929;
+
+  &--order {
+    color: #fff;
+  }
+}
+
+
