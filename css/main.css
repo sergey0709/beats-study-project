@@ -18,13 +18,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
+  min-width: 1120px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 1100px;
+  padding: 24px 105px 18px 80px;
   margin: 0 auto;
   position: relative;
 }
@@ -254,20 +255,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.section-reviews {
-  position: relative;
-}
-.section-reviews:before {
-  content: url(../img/circle.svg);
-  position: absolute;
-  bottom: -22px;
-  left: 20%;
-}
-.section--order {
-  background: url(../img/order-background.png) center center no-repeat, #181818;
-  color: #fff;
-  font-family: play;
-}
 
 .section__title {
   font-size: 48px;
@@ -357,13 +344,23 @@ img {
   margin-bottom: 62px;
 }
 
-.benefits-section {
+.advantages {
   position: relative;
 }
-.benefits-section:before {
+.advantages:before {
   content: url(../img/triangle.svg);
   position: absolute;
   bottom: -17px;
+  left: 20%;
+}
+
+.review {
+  position: relative;
+}
+.review:before {
+  content: url(../img/circle.svg);
+  position: absolute;
+  bottom: -22px;
   left: 20%;
 }
 
@@ -468,6 +465,13 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.order {
+  background: url(../img/order-background.png) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: play;
 }
 
 .form {

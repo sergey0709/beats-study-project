@@ -1,3 +1,14 @@
+.review {
+  position: relative;
+
+  &:before {
+    content: url(../img/circle.svg);
+    position: absolute;
+    bottom: -22px;
+    left: 20%;
+  }
+}
+
 .reviews__display {
   background: #F8FAF9;
   padding: 50px 45px 34px;

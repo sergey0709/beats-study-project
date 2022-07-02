@@ -1,4 +1,4 @@
-$containerWidth: 940px;
+$containerWidth: 1100px;
 $baseFontSize: 16px;
 
 //z-indexes
@@ -21,9 +21,9 @@ $z-fixed-menu: 100;
 @import "./components/_benefits.scss";
 @import "./components/_benefit.scss";
 @import "./components/_headline.scss";
-@import "./components/_benefits-section.scss";
+@import "./components/_advantages.scss";
 @import "./components/_reviews.scss";
 @import "./components/_interactive-avatar.scss";
-@import "./components/_form.scss";
+@import "./components/_order.scss";
 @import "./components/_radio.scss";
 @import "./components/_fixed-menu.scss";
