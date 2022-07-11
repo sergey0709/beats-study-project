@@ -25,7 +25,7 @@ body {
 
 .container {
   width: 1100px;
-  padding: 24px 105px 18px 80px;
+  padding: 0px 105px 0px 80px;
   margin: 0 auto;
   position: relative;
 }
@@ -268,7 +268,7 @@ img {
   color: #fff;
 }
 
-.benefits {
+.advantages__benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,23 +354,23 @@ img {
   left: 20%;
 }
 
-.review {
+.reviews {
   position: relative;
 }
-.review:before {
+.reviews:before {
   content: url(../img/circle.svg);
   position: absolute;
   bottom: -22px;
   left: 20%;
 }
 
-.reviews__display {
+.feedback__display {
   background: #F8FAF9;
   padding: 50px 45px 34px;
   overflow: hidden;
   position: relative;
 }
-.reviews__display:before {
+.feedback__display:before {
   content: "";
   display: block;
   width: 90px;
@@ -384,25 +384,25 @@ img {
   top: -65px;
 }
 
-.review__display-inner {
+.feedback__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.reviews__avatar {
+.feedback__avatar {
   width: 253px;
   height: 264px;
 }
 
-.reviews__avatar-img {
+.feedback__avatar-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.reviews__content {
+.feedback__content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -410,7 +410,7 @@ img {
   margin-top: 31px;
 }
 
-.reviews__title {
+.feedback__title {
   font-family: play;
   font-size: 27px;
   font-weight: bold;
@@ -418,18 +418,18 @@ img {
   color: #292929;
 }
 
-.reviews__text {
+.feedback__text {
   margin-bottom: 59px;
 }
 
-.reviews__author {
+.feedback__author {
   font-family: play;
   font-size: 18px;
   font-weight: bold;
   color: #292929;
 }
 
-.reviews__switcher {
+.feedback__switcher {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
