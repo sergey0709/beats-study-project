@@ -3,21 +3,21 @@
 }
 
 .features__item {
-  margin-right: 49px;
+  margin-right: rem(49px);
   &:last-child {
     margin-right: 0;
   }
 }
 
 .features__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: rem(45px);
+  margin-right: rem(7px);
 }
 
 .feature__text {
   font-size: $baseFontSize;
   color: #292929;
-  max-width: 85px;
+  max-width: rem(85px);
 }
 
 .feature {

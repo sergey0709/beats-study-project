@@ -1,6 +1,13 @@
 $containerWidth: 1100px;
 $baseFontSize: 16px;
 
+//breakpoints 
+$tablets: 768px;
+$phones: 480px;
+
+@import "./components/_media.scss";
+
+
 //z-indexes
 $z-fixed-menu: 100;
 

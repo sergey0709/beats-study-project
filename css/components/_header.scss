@@ -7,11 +7,11 @@
 .menu__list {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: rem(16px);
 }
 
 .menu__item {
-  margin-right: 16px;
+  margin-right: rem(16px);
 
   &:last-child {
     margin-right: 0;
@@ -24,14 +24,14 @@
 
 .phone-number {
   font-family: Play;
-  font-size: 19px;
+  font-size: rem(19px);
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .phone-number__icon-elem {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
+  width: rem(14px);
+  height: rem(14px);
+  margin-right: rem(6px);
 }
