@@ -1,12 +1,21 @@
 .advantages__benefits {
   display: flex;
   font-family: play;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
-.benefits__item {
+.advantages__item {
   flex: 1;
   padding: 0 3%;
   position: relative;
+  padding: 0;
+
+  @include phones {
+    margin-bottom: rem(19px);
+  }
 
   &:before {
     content: url(../../img/separator.svg);
@@ -14,6 +23,14 @@
     top: rem(60px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      display: none;
+   }
   }
 
   &:first-child {

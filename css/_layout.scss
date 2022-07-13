@@ -37,6 +37,10 @@ body {
   padding: rem(0px) rem(105px) rem(0px) rem(80px);
   margin: 0 auto;
   position: relative;
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 h1,

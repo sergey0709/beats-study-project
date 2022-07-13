@@ -1,19 +1,29 @@
 .benefit {
   text-align: center;
+
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
-.benefit__image-wrapper {
+.advantages__image-wrapper {
   display: inline-block;
-  width: rem(126px);
-  height: rem(126px);
+  width: 126px;
+  height: 126px;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: rem(24px);
+  margin-bottom: 24px;
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+  }
 }
 
-.benefit__icon {
+.advantages__icon {
   width: rem(75px);
   height: rem(69px);
   position: absolute;
@@ -22,7 +32,7 @@
   transform: translate(-50%, -50%);
 }
 
-.benefit__title {
+.advantages__title {
   color: #292929;
   font-weight: bold;
 }

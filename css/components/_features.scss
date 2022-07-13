@@ -14,6 +14,11 @@
   margin-right: rem(7px);
 }
 
+.feature__picture {
+  width: rem(40px);
+  height: rem(40px);
+}
+
 .feature__text {
   font-size: $baseFontSize;
   color: #292929;
