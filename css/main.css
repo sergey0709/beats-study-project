@@ -44,12 +44,12 @@ body {
 }
 @media screen and (max-width: 480px) {
   .container {
-    padding: 0;
+    padding: 3%;
   }
 }
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0;
+    padding: 3%;
   }
 }
 
@@ -943,7 +943,17 @@ img {
 }
 
 .footer__container {
-  padding: 1.25rem;
+  padding: 1.25rem 6.5625rem 1.25rem 5rem;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    padding: 3%;
+  }
 }
 
 .footer__content {
@@ -1006,6 +1016,9 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 1.25rem;
+  }
+  .footer__col:last-child {
+    margin-bottom: 0;
   }
 }
 

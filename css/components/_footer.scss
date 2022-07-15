@@ -1,3 +1,4 @@
+
 .map__footer {
   font-family: Play;
   font-size: rem(18px);
@@ -11,7 +12,15 @@
 }
 
 .footer__container {
-  padding: rem(20px);
+  padding: rem(20px) rem(105px) rem(20px) rem(80px);
+
+  @include phones {
+    padding: 3%;
+  }
+
+  @include tablets {
+    padding: 3%;
+  }
 }
 
 .footer__content {
@@ -46,9 +55,15 @@
     align-items: flex-end;
   }
 
+ 
+
   @include phones {
     align-items: center;
     margin-bottom: rem(20px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
