@@ -10,7 +10,7 @@
 
   @include tablets {
     flex-direction: column;
-    padding: 0 19%;
+    padding: 0 14%;
   }
 
   @include phones {
@@ -52,6 +52,7 @@
   border: none;
   padding: rem(18px) rem(11px);
   border: solid rem(3px) transparent;
+  border-radius: rem(4px);
 
   &:focus {
     border-color: #E01F3D;

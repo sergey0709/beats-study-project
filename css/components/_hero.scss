@@ -19,6 +19,7 @@
   height: 100%;
   padding: rem(24px) 0 rem(46px) 0;
   background: url(../img/earphones.svg) right center / 40% auto no-repeat;
+  
 
   @include tablets {
     background: none;
@@ -58,6 +59,14 @@
   font-weight: bold;
   margin-bottom: rem(23px);
   text-transform: uppercase;
+
+  @include tablets {
+    width: 80%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .hero__title-desc {
@@ -80,4 +89,8 @@
   @include tablets {
     display: none;
   }
+}
+
+.name {
+  white-space: nowrap;
 }

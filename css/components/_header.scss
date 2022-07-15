@@ -65,6 +65,10 @@
   @include tablets {
     color: #E01F3D;
   }
+
+  @include phones {
+    color: black;
+  }
 }
 
 .phone-number__text {

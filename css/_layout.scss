@@ -41,6 +41,10 @@ body {
   @include phones {
     padding: 0;
   }
+
+  @include tablets {
+    padding: 0;
+  }
 }
 
 h1,

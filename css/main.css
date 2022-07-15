@@ -47,6 +47,11 @@ body {
     padding: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
 
 h1,
 h2,
@@ -175,6 +180,16 @@ img {
   margin-bottom: 1.4375rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__main-title {
+    width: 100%;
+  }
+}
 
 .hero__title-desc {
   font-size: 1.125rem;
@@ -198,6 +213,10 @@ img {
   .hero__icons-section {
     display: none;
   }
+}
+
+.name {
+  white-space: nowrap;
 }
 
 .header {
@@ -288,6 +307,11 @@ img {
 @media screen and (max-width: 768px) {
   .phone-number__icon-elem {
     color: #E01F3D;
+  }
+}
+@media screen and (max-width: 480px) {
+  .phone-number__icon-elem {
+    color: black;
   }
 }
 
@@ -604,6 +628,11 @@ img {
   margin-left: 2.375rem;
   margin-top: 1.9375rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
+}
 
 .reviews__title {
   font-family: play;
@@ -680,7 +709,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 19%;
+    padding: 0 14%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -730,6 +759,7 @@ img {
   border: none;
   padding: 1.125rem 0.6875rem;
   border: solid 0.1875rem transparent;
+  border-radius: 0.25rem;
 }
 .form__input:focus {
   border-color: #E01F3D;
@@ -820,6 +850,16 @@ img {
   right: 3%;
   z-index: 100;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 0.3125rem;
@@ -890,7 +930,7 @@ img {
   border-radius: 10px;
 }
 
-.footer {
+.map__footer {
   font-family: Play;
   font-size: 1.125rem;
   color: black;
@@ -928,7 +968,7 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .address {
+  .footer__address {
     margin-bottom: 0.625rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -969,36 +1009,34 @@ img {
   }
 }
 
-.footer {
-  font-family: Play;
-  font-size: 1.125rem;
-  color: black;
-  font-style: normal;
-}
-
 @media screen and (max-width: 768px) {
   .footer__phone-number {
     color: #E01F3D;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer__phone-number {
+    color: black;
+  }
+}
 
-.nets__item {
+.footer-social__item {
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
 }
-.nets__item:last-child {
+.footer-social__item:last-child {
   margin-right: 0;
 }
 
-.nets__icon {
+.footer-social__icon {
   width: 1.875rem;
   height: 1.875rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #b3b3b3;
 }
-.nets__icon:hover {
+.footer-social__icon:hover {
   color: black;
 }
 
