@@ -1,5 +1,5 @@
 
-.map__footer {
+.footer {
   font-family: Play;
   font-size: rem(18px);
   color: black;
@@ -34,7 +34,7 @@
   }
 }
 
-.footer__address {
+.footer__info {
 
   @include phones {
     margin-bottom: rem(10px);

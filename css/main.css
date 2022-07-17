@@ -930,7 +930,7 @@ img {
   border-radius: 10px;
 }
 
-.map__footer {
+.footer {
   font-family: Play;
   font-size: 1.125rem;
   color: black;
@@ -978,7 +978,7 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .footer__address {
+  .footer__info {
     margin-bottom: 0.625rem;
     display: -webkit-box;
     display: -ms-flexbox;
