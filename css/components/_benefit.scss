@@ -5,6 +5,12 @@
     display: flex;
     text-align: left;
   }
+
+  @include iphone5 {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
 }
 
 .advantages__image-wrapper {
@@ -21,6 +27,11 @@
     margin-bottom: 0;
     margin-right: rem(20px);
   }
+
+  @include iphone5 {
+    width: rem(100px);
+    height: rem(100px);
+  }
 }
 
 .advantages__icon {
@@ -35,4 +46,9 @@
 .advantages__title {
   color: #292929;
   font-weight: bold;
+  
+  @include iphone5 {
+    margin-bottom: rem(-8px);
+  }
 }
+

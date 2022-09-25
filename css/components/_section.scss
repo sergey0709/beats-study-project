@@ -5,13 +5,13 @@
   flex-direction: column;
   justify-content: center;
 
-  @include phones {
-  height: 150vh;
+  @include tablets {
+    min-height: inherit;
   }
 
-  @include tablets {
-    height: 120vh;
-    }
+  @include iphone5 {
+    min-height: 100vh;
+  }
 }
 
 .section__title {
@@ -24,6 +24,11 @@
 
   &--order {
     color: #fff;
+  }
+
+  @include iphone5 {
+    font-size: rem(25px);
+    margin-bottom: rem(10px);
   }
 }
 

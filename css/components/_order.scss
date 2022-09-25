@@ -36,6 +36,10 @@
 .form__row {
   display: flex;
   margin-bottom: rem(18px);
+
+  @include iphone5 {
+    margin-bottom: rem(10px);  
+  }
 }
 
 .form__block {
@@ -55,13 +59,17 @@
   border-radius: rem(4px);
 
   &:focus {
-    border-color: #E01F3D;
+    border-color: $btn-bg-primary;
     outline: none;
   }
 
   &--textarea {
     height: rem(150px);
     resize: none;
+  }
+
+  @include iphone5 {
+    padding: rem(5px) rem(5px);
   }
 }
 

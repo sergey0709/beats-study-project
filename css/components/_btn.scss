@@ -8,23 +8,23 @@
   text-decoration: none;
   border: none;
 
-  &--theme--red {
-    background: #E01F3D;
+  &--theme--primary {
+    background: $btn-bg-primary;
     color: #fff;
     
     &:hover {
       background: #fff;
-      color: #E01F3D;
+      color: $btn-bg-primary;
     }
   }
 
-  &--theme--darkred {
-    background: #CA1B36;
+  &--theme--secondary {
+    background: $btn-bg-secondary;
     color: #fff;
     
     &:hover {
       background: #fff;
-      color: #CA1B36;
+      color: $btn-bg-secondary
     }
   }
 
@@ -34,7 +34,7 @@
     text-transform: none;
     
     &:hover {
-      color: #CA1B36;
+      color: $btn-bg-secondary;
     }
   }
 

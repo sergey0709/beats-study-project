@@ -9,7 +9,6 @@
 
 .advantages__item {
   flex: 1;
-  padding: 0 3%;
   position: relative;
   padding: 0;
 
@@ -30,7 +29,15 @@
 
     @include phones {
       display: none;
-   }
+    }
+
+    @include iphone5 {
+     display: none;
+    }
+  }
+
+  @include iphone5 {
+    margin-bottom: rem(0px);
   }
 
   &:first-child {

@@ -5,6 +5,10 @@
 
 .headline__title {
   margin-bottom: rem(25px);
+
+  @include iphone5 {
+    margin-bottom: rem(5px);
+  }
 }
 
 .headline__subtitle {
@@ -13,5 +17,9 @@
 
   @include phones {
     padding: 0 5%;
+  }
+
+  @include iphone5 {
+    margin-bottom: rem(5px);
   }
 }

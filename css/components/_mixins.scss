@@ -13,3 +13,9 @@
     @content;
   }
 }
+
+@mixin iphone5 {
+  @media screen and (max-width: $iphone5) {
+    @content;
+  }
+}

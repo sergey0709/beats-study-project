@@ -27,6 +27,15 @@
     transform: translateX(-50%);
     top: rem(-65px);
   }
+
+  @include iphone5 {
+    padding: rem(16px) rem(45px) rem(16px);
+
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
 }
 
 .reviews__display-inner {
@@ -63,6 +72,10 @@
   @include tablets {
     margin-left: 0;
   }
+
+  @include iphone5 {
+    margin-top: rem(10px);
+  }
 }
 
 .reviews__title {
@@ -71,10 +84,19 @@
   font-weight: bold;
   margin-bottom: rem(22px);
   color: #292929;
+
+  @include iphone5 {
+    margin-bottom: rem(10px);
+  }
+
 }
 
 .reviews__text {
   margin-bottom: rem(59px);
+
+  @include iphone5 {
+    margin-bottom: rem(10px);
+  }
 }
 
 .reviews__author {  

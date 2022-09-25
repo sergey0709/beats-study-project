@@ -4,6 +4,7 @@
   user-select: none;
   margin-right: rem(15px);
   margin-bottom: rem(30px);
+  position: relative;
 
   &--checkbox {
     .radio__visible {
@@ -14,15 +15,24 @@
       } 
     }
   }
+
+  @include iphone5 {
+    margin-bottom: rem(16px);  
+  }
 }
 
 .radio__elem {
-  display: none;
+  appearance: none;
+  position: absolute;
 
   &:checked ~ .radio__visible {
     &:before {
       display: block;
     }
+  }
+
+  &:focus ~ .radio__visible {
+    border: 2px solid $btn-bg-primary;
   }
 }
 
