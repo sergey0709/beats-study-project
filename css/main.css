@@ -1162,3 +1162,201 @@ img {
   background: url(../img/map.svg) center center no-repeat;
   background-size: cover;
 }
+
+.products {
+  background-color: #F8FAF9;
+}
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.products__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3.125rem;
+     -moz-column-gap: 3.125rem;
+          column-gap: 3.125rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.products__preview {
+  width: 100%;
+  max-width: 28.25rem;
+}
+.products__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.5rem;
+  position: relative;
+}
+.products__title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  color: #292929;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.products__desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #666666;
+  width: 80%;
+}
+.products__parameter {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 2.75rem;
+     -moz-column-gap: 2.75rem;
+          column-gap: 2.75rem;
+}
+.products__parameter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.products__parameter-value {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #000000;
+}
+.products__price {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 3.75rem;
+  color: #151515;
+}
+.products__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.9375rem;
+     -moz-column-gap: 0.9375rem;
+          column-gap: 0.9375rem;
+}
+.products__drop-icon {
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: #9A9A9A;
+  border-radius: 0.25rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.products__drop-menu-icon {
+  width: 50%;
+}
+.products__drop-menu-item-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.products__drop-menu {
+  display: none;
+  max-width: 17.0625rem;
+  max-height: 18.375rem;
+  background: rgba(193, 193, 193, 0.9);
+  border-radius: 4px;
+  position: absolute;
+  left: 100%;
+  padding: 18px 14px 24px;
+  color: #000;
+}
+.products__drop-menu:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.products__drop-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15.375rem;
+  padding: 0.625rem;
+}
+.products__drop-menu-icon-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.products__wrapper-list {
+  overflow: hidden;
+  position: relative;
+}
+.products__slide-arrows {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.products__slide-arrow {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.products__slide-right-arrow-icon {
+  width: 1.5rem;
+  height: 2.5rem;
+}
+.products__slide-left-arrow-icon {
+  width: 1.5rem;
+  height: 2.5rem;
+}
