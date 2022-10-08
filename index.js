@@ -1,3 +1,36 @@
+
+
+
+class Modal {
+  constructor(selector) {
+    this.menu = document.querySelector(selector);
+  }
+
+    open() {
+      this.menu.classList.add('fullscreen-menu--opened');
+    }
+
+    close() {
+      this.menu.classList.remove('fullscreen-menu--opened');
+    }
+
+    setEventListener(){
+      document.addEventListener('click', (e) => {
+        const targetButtonEvent = e.target.closest('[data-event]');
+        if(targetButtonEvent) {
+          const event = targetButtonEvent.dataset.event;
+          this[event]();
+        }
+      })
+    }
+
+  }
+
+const menu = new Modal('#full-menu');
+menu.setEventListener();
+
+
+
 const initial_number_slide = 1;
 class Slider {
   constructor (selector, settings = {}) {
@@ -58,13 +91,15 @@ class Slider {
 
     this.setEventListener();
   }
+
 }
 
 const slider = new Slider('#slider', {
     transition: 1000,
     auto: true,
-    autoInterval: 3000
+    autoInterval: 10000
 });
+
 slider.init();
 
 console.log(slider) 

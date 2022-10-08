@@ -22,7 +22,28 @@
   @include tablets {
     display: none;
   }
+
+  &--color--secondary {
+    .menu__link {
+    color: #fff;
+    }
+  }
+
+  &--fz--big {
+    .menu__link {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 72px;
+    }
+  }
+
+  &--column {
+    .menu__list {
+      flex-direction: column;
+    }
+  }
 }
+
 .menu__list {
   display: flex;
   align-items: center;
