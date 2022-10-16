@@ -30,10 +30,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     row-gap: rem(10px);
 
-
+    @include tablets {
+      margin-bottom: rem(10px);
+    }
 
   }
 
@@ -48,8 +50,6 @@
 
     &-block {
       padding-bottom: rem(5px);
-      max-width: rem(220px);
-      max-height: rem(80px);
       font-weight: 400;
       font-size: rem(16px);
       line-height: rem(19px);
@@ -59,6 +59,7 @@
 
       @include tablets {
         row-gap: rem(10px);
+        align-items: center;
       }
 
       &-profession {
@@ -76,7 +77,7 @@
     width: rem(220px);
   }
 
-  &__tittle {
+  &__title {
     border: none;
     background: transparent;
     cursor: pointer;

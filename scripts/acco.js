@@ -19,12 +19,12 @@ const closeEveryItem = container => {
 $(".team__title").click(e => {
   const $this = $(e.currentTarget);
   const container = $this.closest(".team");
-  const elemContainer = $this.closest(".team-item");
+  const elemContainer = $this.closest(".team__item");
 
   if (elemContainer.hasClass("active")) {
-    closeEveryItem();
+    closeEveryItem(container);
   } else {
-    closeEveryItem();
+    closeEveryItem(container);
     openItem($this);
   }
 });
