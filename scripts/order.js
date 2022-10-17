@@ -25,7 +25,7 @@ class AjaxForm{
           }
       }
 
-      console.log(this.errors)
+      /* console.log(this.errors) */
 
       if (!this.errors.length) {
           return true
@@ -35,7 +35,7 @@ class AjaxForm{
   }
 
   validationField(fieldName) {
-      console.log(fieldName)
+      /* console.log(fieldName) */
       if (fieldName && this.settings.validators[fieldName]) {
           try {
               this.settings.validators[fieldName](this.fields[fieldName])
@@ -60,7 +60,7 @@ class AjaxForm{
           this.errors.push(fieldName)
           field.closest('label').classList.add('error')
 
-          if (this.settings.paceholder) {
+          if (this.settings.placeholder) {
               field.placeholder = text
           }
       }
@@ -80,7 +80,7 @@ class AjaxForm{
               body: this.getJSON()
           })
 
-          console.log(response)
+          /* console.log(response) */
 
           var body = await response.json()
 
@@ -121,14 +121,45 @@ console.log(new AjaxForm('#form', {
       },
       comment: function(field) {
           if (!field.value.length) {
-              throw new Error('Телефон не валиден')
+              throw new Error('Комментарий не валиден')
           }
+      },
+
+      street: function(field) {
+        if (!field.value.length) {
+            throw new Error('Улица не указана')
+        }
+      },
+
+      house: function(field) {
+        if (!field.value.length) {
+            throw new Error('Дом №')
+        }
+      },
+      appartment: function(field) {
+        if (!field.value.length) {
+            throw new Error('Квартира №')
+        }
+      },
+      floor: function(field) {
+        if (!field.value.length) {
+            throw new Error('Этаж №')
+        }
       }
+
   },
   error:(body) => {
-      alert(body)
+    Fancybox.show([{src: "#modalnotsend", type: "inline"}])
   },
   success: (body) => {
-      alert(body.message)
-  }
+    Fancybox.show([{src: "#modal", type: "inline"}])
+  },
+  
+  placeholder: true
 }))
+
+$(".app-close-modal").click(e => {
+    e.preventDefault();
+  
+    Fancybox.close();
+  })

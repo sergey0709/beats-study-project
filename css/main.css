@@ -928,6 +928,10 @@ img {
   border-color: hotpink;
 }
 
+.error {
+  color: red;
+}
+
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1687,4 +1691,5 @@ img {
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-bottom: 1.875rem;
+  text-align: center;
 }

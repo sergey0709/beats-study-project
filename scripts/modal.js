@@ -21,6 +21,11 @@ $('.form').submit(e => {
   const phone = form.find("[name='phone']");
   const comment = form.find("[name='comment']");
   const to = form.find("[name='to']");
+  const street = form.find("[name='street']");
+  const house = form.find("[name='house']");
+  const building = form.find("[name='building']");
+  const appartment = form.find("[name='appartment']");
+  const floor = form.find("[name='floor']");
 
   const modal = $("#modal");
   const content = modal.find(".modal__content");
@@ -28,7 +33,7 @@ $('.form').submit(e => {
   modal.removeClass("error-modal");
 
 
-  const isValid = validationFields(form, [name, phone, comment, to])
+  const isValid = validationFields(form, [name, phone, comment, to, street, house, building, appartment, floor])
 
 
   if (isValid) {
@@ -38,6 +43,11 @@ $('.form').submit(e => {
       data: {
         name: name.val(),
         phone: phone.val(),
+        street: street.val(),
+        house: house.val(),
+        building: building.val(),
+        appartment: appartment.val(),
+        floor: floor.val(),
         comment: comment.val(),
         to: to.val()
       },
@@ -49,16 +59,13 @@ $('.form').submit(e => {
 
 
     request.fail(data => {
-      const message = data.responseJSON.message;
+      const message = data?.responseJSON?.message || 'Ошибка на стороне сервера';
       content.text(message);
       modal.addClass("error-modal");
     })
 
     request.always(() => {
-      $.fancybox.open({
-        src: "#modal",
-        type: "inline"
-      })
+      Fancybox.show([{src: "#modal", type: "inline"}])
     })
 
   }
@@ -68,5 +75,5 @@ $('.form').submit(e => {
 $(".app-close-modal").click(e => {
   e.preventDefault();
 
-  $.fancybox.close();
+  Fancybox.close();
 })

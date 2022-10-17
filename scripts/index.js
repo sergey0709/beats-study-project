@@ -16,9 +16,9 @@ class Modal {
 
     setEventListener(){
       document.addEventListener('click', (e) => {
-        e.preventDefault();
         const targetButtonEvent = e.target.closest('[data-event]');
         if(targetButtonEvent) {
+          e.preventDefault();
           const event = targetButtonEvent.dataset.event;
           this[event]();
         }
