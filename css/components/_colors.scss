@@ -1,0 +1,66 @@
+.colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  color: #fff;
+  background: url(../../img/bg-colors.jpg) center center/cover no-repeat;
+
+  &__menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+
+    &--one {
+      background: #999999;
+    }
+
+    &--two {
+      background: #151515;
+    }
+
+    &--three {
+      background: $btn-bg-primary;
+    }
+  }
+
+  &__title {
+    position: relative;
+    width: 100px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  &__content {
+    background: rgba(51, 53, 55, 0.8);;
+    width: 0;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+  }
+
+  &__title-text {
+    padding: 48px 73px 45px 26px;
+    transform: rotate(-90deg);
+  }
+
+  &__close {
+    background: transparent;
+    border: none;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+  }
+
+}

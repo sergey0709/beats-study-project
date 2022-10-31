@@ -4,6 +4,7 @@
   right: 3%;
   z-index: $z-fixed-menu;
 
+
   @include tablets {
     display: none;
   }
@@ -34,6 +35,18 @@
       }
 
     }
+
+    .fixed-menu__link--clarified {
+      border-color: #fff;
+      
+      &:before {
+        content: "";
+        background: #fff;
+      }
+
+    }
+
+
   }
 }
 
@@ -56,5 +69,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &--clarified {
+    &:before {
+      content: "";
+      background: #fff;
+    }
   }
 }

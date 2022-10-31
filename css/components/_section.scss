@@ -1,9 +1,11 @@
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  
 
   @include tablets {
     min-height: inherit;
@@ -22,8 +24,13 @@
   text-transform: uppercase;
   color: #292929;
 
-  &--order {
+  &--white {
     color: #fff;
+  }
+
+  &--colors {
+    text-align: left;
+    padding: 15% 5%;
   }
 
   @include iphone5 {
