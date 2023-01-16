@@ -1107,7 +1107,6 @@ img {
   font-size: 1.125rem;
   color: black;
   font-style: normal;
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1578,7 +1577,6 @@ img {
           justify-content: space-between;
 }
 .team__list--desktop {
-  position: absolute;
   top: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -1854,6 +1852,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .colors__item {
   display: -webkit-box;
@@ -1905,4 +1906,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+}
+.colors__close-button {
+  cursor: pointer;
 }
